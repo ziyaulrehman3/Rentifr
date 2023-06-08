@@ -1,0 +1,98 @@
+/*---------------- Header Start--------------------*/
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+}
+
+header{
+    position: sticky;
+    top:0px;
+    padding-left: 5%;
+    padding-top: 5px;
+    background-color: white;
+    margin: auto;
+    z-index: 9999;
+    box-shadow: -0.2em 0 .4em olive;
+}
+
+#header-main-logo{
+    width:15%;
+    position: relative;
+    top:10px;
+}
+
+#header-btn-1{
+    color: #00235B;
+    height: 40px;
+    width: 7%;
+    border: none;
+    position: relative;
+    top:-20px;
+    margin-left: 10px;
+}
+
+#header-btn-2{
+    width:50%;
+    border: 2px solid #00235B;
+    color: #00235B;
+    border-radius: 20px;
+    height: 40px;
+    position: relative;
+    top:-20px;
+    text-align: center;
+}
+
+
+#header-btn-3{
+    color: #00235B;
+    height: 40px;
+    width:4%;
+    margin: 0px;
+    display: inline-block;
+    border:none;
+    background-color: white;
+    position: relative;
+    bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-decoration: none;
+}
+
+#header-btn-3 img{
+  margin: 0px;
+  display: inline-block;
+  height:18px;
+}
+
+#header-btn-3 p{
+  margin: 0px;
+  display: inline-block;
+}
+
+#header-btn-4{
+    margin: 0px;
+    width:12%;
+    height: 40px;
+    color: white;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color:#00235B;
+    display: inline-block;
+    border: none;
+    border-radius: 15px;
+    position: relative;
+    top:-20px;
+}
+
+#header-btn-4 a{
+  text-decoration: none;
+  color:white;
+}
+
+
+/*---------------- Header End------------------*/
+
+.hide{
+  display: none;
+}

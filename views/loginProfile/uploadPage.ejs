@@ -1,0 +1,29 @@
+<%-include('../partials/loginHeader')%>
+
+
+
+<div class="upload-page">
+  <h1>Hello, <%=accountName%></h1>
+
+  <button id="upload-page-button-1" type="button" name="button"><img src="logos/uploaded.png" alt=""><p>View your Listed Iteams.</p></button>
+  <button id="upload-page-button-2" type="button" name="button"><img src="logos/upload.png" alt=""><p>Listing your Iteams.</p></button>
+</div>
+
+<form class="profiledetails hide" action="/viewListedIteams" method="post">
+  <input type="number" name="mobileno" value="<%=accountMobileno%>">
+  <input type="text" name="name" value="<%=accountName%>">
+  <input type="text" name="email" value="<%=accountEmail%>">
+  <button id="viewListedIteams-button-submit" type="submit" name="button">Submit</button>
+</form>
+
+
+<form class="profiledetails hide" action="/ListingIteams" method="post">
+  <input type="number" name="mobileno" value="<%=accountMobileno%>">
+  <input type="text" name="name" value="<%=accountName%>">
+  <input type="text" name="email" value="<%=accountEmail%>">
+  <button id="ListingIteams-button-submit" type="submit" name="button">Submit</button>
+</form>
+
+
+<script src="script/uploadPage.js" charset="utf-8"></script>
+<%-include('../partials/footer')%>

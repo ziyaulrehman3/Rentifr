@@ -1,0 +1,147 @@
+<%- include('../partials/header') %>
+
+<div class="main">
+
+<!-- -------------Slide Show Start---------- -->
+  <div class="slide-show">
+     <img class ="slide-show-img" id="slide-show-0" src="logos/poster-1.png" alt="">
+     <img class ="slide-show-img" id="slide-show-1" src="logos/poster-2.png" alt="">
+     <img class ="slide-show-img" id="slide-show-2" src="logos/poster-3.png" alt="">
+  </div>
+
+<!-- -------------Slide Show Start---------- -->
+
+
+<!-- -------------Product Categorys Start---------- -->
+
+<div class="product-categories">
+
+      <a href="/iteamsMenu" onclick="setCategory('furniture');">
+           <div class="category-type">
+              <img class="category-type-img" src="logos/furniture.png" alt="">
+              <p>Furniture</p>
+           </div>
+      </a>
+
+      <a href="/iteamsMenu" onclick="setCategory('appliances');">
+        <div class="category-type">
+           <img class="category-type-img" src="logos/appliances.png" alt="">
+           <p>Appliances</p>
+        </div>
+      </a>
+
+      <a href="/iteamsMenu" onclick="setCategory('phones');">
+        <div class="category-type">
+           <img class="category-type-img" src="logos/phone.png" alt="">
+           <p>Phones</p>
+        </div>
+      </a>
+
+      <a href="/iteamsMenu"onclick="setCategory('house');">
+        <div class="category-type">
+           <img class="category-type-img" src="logos/home.png" alt="">
+           <p>House</p>
+        </div>
+      </a>
+
+      <a href="/iteamsMenu" onclick="setCategory('bike');">
+          <div class="category-type">
+            <img class="category-type-img" src="logos/bike.png" alt="">
+            <p>Bike</p>
+           </div>
+      </a>
+
+      <a href="/iteamsMenu" onclick="setCategory('car');">
+        <div class="category-type">
+           <img class="category-type-img" src="logos/car.png" alt="">
+           <p>Car</p>
+        </div>
+      </a>
+
+</div>
+
+<!-- -------------Product Categorys End---------- -->
+
+
+<!-- -------------Product Show Start---------- -->
+
+  <div class="product-show">
+
+
+     <div>
+        <div class="product-show-headings">
+           <h2 id="div-3-heading-1">There's more</h2>
+           <h3 id="div-3-heading-2">to renting</h3>
+        </div>
+     </div>
+
+<%for(var i=0;i<4;i++){%>
+
+  <div class="product-show-product-box">
+       <img src="<%=iteamsObj[i].imgfile%>" alt="">
+       <h3><%=iteamsObj[i].name%></h3>
+
+       <div class="product-show-product-box-details">
+
+           <div class="product-show-product-box-details-1">
+               <h4>Rent</h4>
+               <p>₹ <%=iteamsObj[i].price%>/mo</p>
+           </div>
+
+          <a href="/iteamsMenu">
+               <div  class="iteam-cat-1-1 product-show-product-box-details-1-button">
+                     <button onclick="setCategory('na');">Read More</button>
+              </div>
+          </a>
+
+       </div>
+
+  </div>
+
+<%}%>
+
+
+  </div>
+
+<!-- -------------Product Show End---------- -->
+
+
+<!-- -------------Features Start---------- -->
+
+
+  <div class="features-div">
+
+
+     <div class="features-div-sub">
+        <img src="logos/good-quality.png" alt="">
+        <h3>Finest-quality products</h3>
+        <p>Quality matters to you, and us! That's why we do a strict quality-check for every product.</p>
+     </div>
+
+     <div class="features-div-sub">
+        <img src="logos/upgrade.png" alt="">
+        <h3>Keep Upgrading</h3>
+        <p>Bored of the same product? Upgrade to try another, newer design and enjoy the change!</p>
+     </div>
+
+     <div class="features-div-sub">
+        <img src="logos/no-broker.png" alt="">
+        <h3>No Brokrage Charge</h3>
+        <p>the renter does not pay a broker's fee.</p>
+     </div>
+
+
+     <div class="features-div-sub">
+        <img src="logos/returns.png" alt="">
+        <h3>Easy return</h3>
+        <p>the renter easly return any iteam.</p>
+     </div>
+
+  </div>
+</div>
+
+
+<script src="script/index.js"></script>
+<!-- -------------Our Features Start---------- -->
+
+<%- include('../partials/footer') %>

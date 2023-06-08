@@ -1,0 +1,104 @@
+.paymentPage-div{
+  width:80%;
+  background-color: #FAF7F0;
+  margin:30px auto 40px auto;
+  text-align:center;
+  border-radius: 10px;
+}
+
+.paymentPage-div form{
+  margin: auto;
+  text-align: center;
+}
+
+.paymentPage-div-sub-1,.paymentPage-div-sub-2{
+  display: inline-block;
+  width:49%;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.paymentPage-div-sub-1,.paymentPage-div-sub-2 h2{
+  color:#00235B;
+  padding-top: 10px;
+}
+
+.paymentPage-div-sub-1{
+  margin: auto;
+  position: relative;
+  top:-20px;
+  border-right: 2px solid #00235B;
+
+}
+.paymentPage-div-sub-1 input{
+  height:25px;
+  width:250px;
+  margin: 0px auto 10px auto;
+  border:2px solid #6E85B7;
+  border-radius: 5px;
+  display: block;
+}
+
+::placeholder{
+  text-decoration: none;
+}
+
+.paymentPage-div-sub-2 input{
+  display: inline-block;
+  width:30px;
+}
+
+.paymentPage-div-sub-2-button{
+  text-align: left;
+  padding-left: 120px;
+}
+.paymentPage-div-sub-2-button img{
+  width:60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.paymentPage-div-sub-2-button h3{
+  margin: 0px;
+  display: inline-block;
+  position: relative;
+  top:-20px;
+  padding-left: 10px;
+  color:#00235B;
+
+}
+
+
+.paymentPage-div button{
+  margin-top: 5px;
+  width:200px;
+  height:30px;
+  border:2px solid #00235B;
+  border-radius: 5px;
+  background-color: #00235B;
+  color:white;
+}
+
+.paymentPage-div button:hover{
+  box-shadow: 1px 1px 2px 2px #6E85B7;
+}
+
+
+
+
+.payment-confirm{
+  text-align: center;
+}
+
+.payment-confirm img{
+  width:300px;
+}
+
+.payment-confirm h2{
+  color:#6E85B7;
+  text-decoration: underline;
+}
+
+.hide{
+  display: none;
+}

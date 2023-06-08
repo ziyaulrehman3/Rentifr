@@ -1,0 +1,47 @@
+<%- include('../partials/header')%>
+
+
+<div class="items-menu-div" >
+
+  <h2 id="items-menu-first-heading"></h2>
+        <h3>You can take it on Rent.</h3>
+
+
+        <% for(var i=0;i<iteamsObj.length;i++){ %>
+
+          <div class="items-menu-product-box" id="items-menu-product-box<%=i%>">
+               <img src="<%=iteamsObj[i].imgfile%>" alt="">
+
+
+               <div class="items-menu-product-details">
+                   <h3><%=iteamsObj[i].name%></h3>
+
+
+                   <div class="items-menu-product-details-discription">
+                      <p><%=iteamsObj[i].discription%></p>
+                   </div>
+
+
+                   <h4>Rent - <%=iteamsObj[i].city%></h4>
+                   <p>₹ <%=iteamsObj[i].price%>/day</p>
+
+
+                  <input class="hide" type="text" name="iteamId" value="<%=iteamsObj[i]._id%>">
+                  <input class="hide iteams-menu-city" type="text" name="city" value="<%=iteamsObj[i].city%>">
+                  <input class="hide iteams-menu-category" type="text" name="category" value="<%=iteamsObj[i].category%>">
+                  <button onclick="addToCart('<%=iteamsObj[i]._id%>','<%=iteamsObj[i].price%>');"  id="items-menu-product-details" type="submit">Add to Cart</button>
+
+             </div>
+          </div>
+
+
+        <%} %>
+
+
+</div>
+
+
+<script src="script/itemsMenu.js"></script>
+
+
+<%- include('../partials/footer')%>

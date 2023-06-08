@@ -1,0 +1,57 @@
+<%-include("../partials/loginHeader")%>
+
+<div class="paymentPage-div">
+
+  <form action="/loginPaymentConfirm" method="post">
+
+
+<div class="paymentPage-div-sub-1">
+  <h2 style="text-decoration: underline;">Renter Details:</h2>
+
+  <input type="text" name="name" value="<%=accountName%>" placeholder="Name" required>
+  <input type="text" name="mobileno" value="<%=accountMobileno%>" placeholder="Mobile No" required>
+  <input type="email" name="email" value="<%=accountEmail%>" placeholder="example@mail.com" required>
+  <input type="text" name="aadharcardno" value="" placeholder="Aadhar Card No" required>
+  <input type="text" name="address" value=""  placeholder="Address" required>
+
+</div>
+
+<div class="paymentPage-div-sub-2">
+
+  <h2 style="text-decoration: underline;">Payment Details:</h2>
+  <div class="paymentPage-div-sub-2-button">
+    <img src="logos/card-payment.png" alt="">
+    <h3>Card Payment</h3>
+
+  </div>
+
+  <div class="paymentPage-div-sub-2-button">
+    <img src="logos/net-banking2.jpg" alt="">
+    <h3 >Net Banking</h3>
+
+  </div>
+
+  <div class="paymentPage-div-sub-2-button">
+    <img id="cash-icon" onclick="cashicon();" src="logos/cash-payment2.jpg" alt="">
+
+    <script type="text/javascript">
+         function cashicon(){
+
+           document.getElementById('cash-icon').style.border = "2px solid #00235B";
+
+         }
+    </script>
+    <h3>Cash</h3>
+  </div>
+
+    <button type="submit" name="button">Confirm & Pay</button>
+</div>
+
+
+  </form>
+
+
+
+</div>
+
+<%-include("../partials/footer")%>

@@ -1,0 +1,45 @@
+<%- include('../partials/loginHeader') %>
+
+
+<div class="uploaded-iteam-page-div" >
+        <h2 id="uploaded-iteam-page-div-first-heading">Hello, <%=accountName%></h2>
+        <h3>Your Listed Iteams</h3>
+
+
+        <% for(var i=0;i<iteamsObj.length;i++){ %>
+
+          <div class="uploaded-iteam-page-product-box">
+             <img src="<%=iteamsObj[i].imgfile%>" alt="">
+
+             <div class="uploaded-iteam-page-product-details">
+                <h3><%=iteamsObj[i].name%></h3>
+                <div class="uploaded-iteam-page-product-details-discription">
+                  <p><%=iteamsObj[i].discription%></p>
+                </div>
+
+                <h4>Rent - <%=iteamsObj[i].city%></h4>
+                <p>₹ <%=iteamsObj[i].price%>/day</p>
+
+                <!-- <form class="" action="/uploadedRemoveIteam" method="post"> -->
+                  <input class="hide" type="text" name="iteamId" value="<%=iteamsObj[i]._id%>">
+                  <input class="hide" type="text" name="name" value="<%=accountName%>">
+                  <input class="hide" type="number" name="mobileno" value="<%=accountMobileno%>">
+                  <input class="hide" type="email" name="email" value="<%=accountEmail%>">
+                  <button >Add to Cart</button>
+                <!-- </form> -->
+
+             </div>
+          </div>
+
+
+
+        <%} %>
+
+
+
+
+
+</div>
+
+<script src="script/uploadIteamPage.js" charset="utf-8"></script>
+<%- include('../partials/footer.ejs') %>

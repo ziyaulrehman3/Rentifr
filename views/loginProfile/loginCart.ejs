@@ -1,0 +1,51 @@
+<%- include('../partials/loginHeader') %>
+
+
+<div id="cart-div" class="cart-div" >
+        <h2 id="cart-heading">Your Cart</h2>
+
+
+        <% for(var i=0;i<iteamsObj.length;i++){ %>
+
+          <div id="cart-product-box<%=i%>" class="cart-product-box hide">
+             <img src="<%=iteamsObj[i].imgfile%>" alt="">
+
+             <div class="cart-product-details">
+                <h3><%=iteamsObj[i].name%></h3>
+                <div class="cart-product-details-discription">
+                  <p><%=iteamsObj[i].discription%></p>
+                </div>
+
+                <h4>Rent - <%=iteamsObj[i].city%></h4>
+                <p class="cart-iteam-price">₹ <%=iteamsObj[i].price%>/day</p>
+                <input class="cart-iteam-id hide" id="" type="text" name="iteamId" value="<%=iteamsObj[i]._id%>">
+                <button id="cart-remove-button" onclick="removeFromCart('<%=iteamsObj[i]._id%>','<%=iteamsObj[i].price%>');" type="submit">Remove</button>
+
+
+             </div>
+          </div>
+
+        <%} %>
+
+
+        <div id="cart-payment-details">
+          <h3 id="cartTotalAmount"></h3>
+          <form class="" action="/loginPaymentPage" method="post">
+
+            <input class="hide" type="number" name="mobileno" value="<%=accountMobileno%>">
+            <input class="hide" type="text" name="name" value="<%=accountName%>">
+            <input class="hide" type="text" name="email" value="<%=accountEmail%>">
+            <button type="submit" name="button">Proceed to Rent</button></a>
+          </form>
+        </div>
+
+</div>
+
+
+
+<script src="" charset="utf-8"></script>
+
+<script src="script/cart.js"></script>
+
+
+<%- include('../partials/footer') %>

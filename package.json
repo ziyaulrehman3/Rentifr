@@ -1,0 +1,26 @@
+{
+  "name": "projectrentifr",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "build": "echo success",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ziya",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.1.4",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "fly": "^4.5.7",
+    "formidable": "^2.1.1",
+    "fs": "^0.0.1-security",
+    "jquery": "^3.6.4",
+    "mongoose": "^7.0.3",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.1",
+    "path": "^0.12.7"
+  }
+}

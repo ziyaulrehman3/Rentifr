@@ -1,0 +1,141 @@
+/*-------------Cart Start----------------*/
+
+.cart-div{
+  width:80%;
+  border-radius: 30px;
+  margin:auto;
+  text-align: center;
+}
+
+#cart-heading{
+  background-color: #00235B;
+  border-radius: 20px;
+  color:white;
+}
+
+.cart-product-box{
+  width:280px;
+  min-height: 400px;
+  border:2px solid #00235B;
+  text-align:center;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 20px;
+}
+
+.cart-product-box img{
+  width:260px;
+  height: 200px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* #items-menu-first-heading{
+  color:white;
+  border:2px solid #00235B;
+  background-color: #00235B;
+  border-radius: 20px;
+  padding: 5px;
+} */
+
+.cart-div h3{
+  text-decoration: underline;
+}
+
+
+
+.cart-product-details{
+  text-align: left;
+  padding-left: 12px;
+}
+
+.cart-product-details h3{
+  text-decoration: underline;
+  margin:20px 0px 5px 0px;
+  color:#00235B;
+}
+
+.cart-product-details h4{
+  color:#6E85B7;
+  margin:0px 0px 5px 0px;
+}
+
+.cart-product-details p{
+  margin: 0px;
+  display: inline-block;
+}
+
+.cart-product-details-discription{
+  height:55px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cart-product-details button{
+  width:150px;
+  height:30px;
+  border:2px solid #00235B;
+  background-color: #00235B;
+  color:white;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.cart-product-details button:hover{
+  background-color: white;
+  color:#00235B;
+  box-shadow: 2px 2px 3px 3px #6E85B7;
+}
+
+
+
+#cart-remove-button{
+  width:150px;
+  height:30px;
+  border:2px solid #D21312;
+  background-color: #D21312;
+  color:white;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+#cart-remove-button:hover{
+  box-shadow: 2px 2px 3px 3px #ED2B2A;
+}
+
+
+
+#cart-payment-details{
+  background-color: red;
+  margin:auto;
+  background-color: #FAF7F0;
+  border:1px solid #6E85B7;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+#cart-payment-details h3{
+  color:#00235B;
+}
+#cart-payment-details a{
+  text-decoration: none;
+}
+#cart-payment-details button{
+  width:150px;
+  height:40px;
+  background-color: #00235B;
+  border: 2px solid #00235B;
+  border-radius: 10px;
+  color: white;
+}
+
+#cart-payment-details button:hover{
+  box-shadow: 2px 2px 2px 2px #6E85B7;
+}
+/*-----------------Cart End-----------*/
+
+
+.hide{
+  display: none;
+}

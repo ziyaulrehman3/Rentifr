@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Rentifr</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="style/header.css" >
+      <link rel="stylesheet" href="style/footer.css">
+      <link rel="stylesheet" href="style/index.css" >
+      <link rel="stylesheet" href="style/loginSignupPage.css">
+      <link rel="stylesheet" href="style/profile.css">
+      <link rel="stylesheet" href="style/itemsMenu.css">
+      <link rel="stylesheet" href="style/paymentPage.css">
+      <link rel="stylesheet" href="style/cart.css">
+      <link rel="stylesheet" href="style/footerFile.css">
+
+
+   </head>
+
+
+   <body>
+
+      <header>
+        <a href="/"><img id="header-main-logo" src="logos/logonet.png" alt=""></a>
+
+        <select onclick="city();" id="header-btn-1" class="" name="">
+          <option id="cityVal" value="delhi">Delhi</option>
+          <option value="delhi">Delhi</option>
+          <option value="mumbai">Mumbai</option>
+          <option value="pune">Pune</option>
+          <option value="moradabad">Moradabad</option>
+        </select>
+
+
+
+        <input id="header-btn-2" type="text" name="" value="" placeholder="Search">
+
+
+        <a href="/cart" >
+
+          <div id="header-btn-3" >
+            <img id="header-btn-3-icon" src="logos/cart-icon.png" alt="">
+            <p>Cart</p>
+          </div>
+
+        </a>
+
+        <button id="header-btn-4"><a href="/login">LOGIN / SIGNUP</a></button>
+
+        <script src="script/header.js" charset="utf-8"></script>
+
+      </header>

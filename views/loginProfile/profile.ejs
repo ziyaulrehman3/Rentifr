@@ -1,0 +1,35 @@
+<%- include('../partials/loginHeader') %>
+
+
+<div class="profile-div" >
+        <h2 id="profile-div-heading">Hello, <%=accountName%></h2>
+        <h3>Iteams, You can take it on Rent.</h3>
+
+
+        <% for(var i=0;i<iteamsObj.length;i++){ %>
+
+          <div class="profile-div-product-box">
+             <img src="<%=iteamsObj[i].imgfile%>" alt="">
+
+             <div class="profile-div-product-box-details">
+                <h3><%=iteamsObj[i].name%></h3>
+                <div class="profile-div-product-box-details-discription">
+                  <p><%=iteamsObj[i].discription%></p>
+                </div>
+
+                  <h4>Rent - <%=iteamsObj[i].city%></h4>
+                  <p>₹ <%=iteamsObj[i].price%>/day</p>
+                  <input class="hide" type="text" name="iteamId" value="">
+                  <button onclick="myFunction('<%=iteamsObj[i]._id%>','<%=iteamsObj[i].price%>')" class="uploaded-add-to-cart" type="submit">Add to Cart</button>
+
+             </div>
+          </div>
+
+        <%} %>
+
+</div>
+
+
+<script src="script/uploadIteamPage.js" charset="utf-8"></script>
+
+<%- include('../partials/footer') %>

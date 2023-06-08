@@ -1,0 +1,52 @@
+<%- include('../partials/loginHeader') %>
+
+
+
+<div class="profile-details">
+
+   <div class="profile-details-left">
+
+     <img src="logos/profileicon.png" alt="">
+
+   </div>
+
+
+   <div class="profile-details-right">
+
+     <h2>Account Details:</h2>
+
+         <table>
+             <tr>
+               <td><h3>Name:</h3></td>
+               <td class="account-info"><h3><%=accountName%></h3></td>
+             </tr>
+
+             <tr>
+               <td><h3>Mobile No:</h3></td>
+               <td class="account-info"><h3><%=accountMobileno%></h3></td>
+             </tr>
+
+             <tr>
+               <td><h3>e-Mail:</h3></td>
+               <td class="account-info"><h3><%=accountEmail%></h3></td>
+             </tr>
+
+         </table>
+
+         <a href="/logout"><button type="button" name="button">Log Out</button></a>
+
+
+   </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<%- include('../partials/footer') %>

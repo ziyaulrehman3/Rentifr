@@ -1,0 +1,49 @@
+<%- include('../partials/loginHeader') %>
+
+
+<div class="upload-iteam-page-div" >
+        <h2>Add Product</h2>
+
+  <form class="" action="/uploadIteamPage" method="post">
+
+       <input class="upload-iteam-page-div-input" type="text" name="productName" value="" placeholder="Product Name" required>
+       <input class="upload-iteam-page-div-input" type="text" name="productColor" value="" placeholder="Color">
+
+       <select class="upload-iteam-page-div-option" class="option" name="productCategory">
+         <option value="furniture">Furniture</option>
+         <option value="appliances">Appliances</option>
+         <option value="phones">Phones</option>
+         <option value="house">House</option>
+         <option value="bike">Bike</option>
+         <option value="car">Car</option>
+       </select>
+
+       <input class="upload-iteam-page-div-input" type="number" name="productPrice" value="" placeholder="Product Price/Day" required>
+
+       <select class="upload-iteam-page-div-option" class="option" name="productCity" required>
+         <option value="delhi">Delhi</option>
+         <option value="mumbai">Mumbai</option>
+         <option value="pune">Pune</option>
+         <option value="moradabad">Moradabad</option>
+         <option value="kolkata">Kolkata</option>
+         <option value="jaipur">Jaipur</option>
+       </select>
+
+       <input class="upload-iteam-page-div-input" type="text" name="productAddress" value="" placeholder="Product Place" required>
+       <input class="upload-iteam-page-div-input" id="productImage" type="file" name="productImage" value="khanziya" placeholder="Product Image" required>
+
+       <textarea class="upload-iteam-page-div-textarea"  name="productDiscription" value="" placeholder="Product Discription" rows="800" cols="80" required></textarea>
+
+       <input class="hide" id="productImageFile" type="text" name="productImageFile" value="">
+       <input class="hide" id="mobileno" type="number" name="mobileno" value="<%=accountMobileno%>">
+
+       <input class="hide" type="text" name="name" value="<%=accountName%>">
+       <input class="hide" type="text" name="email" value="<%=accountEmail%>">
+
+       <button type="submit">Add Product</button><br>
+
+  </form>
+</div>
+
+<script src="script/uploadIteamPage.js" charset="utf-8"></script>
+<%- include('../partials/footer.ejs') %>

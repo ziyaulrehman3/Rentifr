@@ -1,0 +1,41 @@
+
+/*-------------Upload Page Start---------------*/
+
+.upload-page{
+  text-align: center;
+  background-color: #FAF7F0;
+  min-height: 350px;
+  width:70%;
+  margin:50px auto 100px auto;
+  border-radius: 30px;
+  border:2px solid #00235B;
+  padding-bottom: 20px;
+}
+
+.upload-page h1{
+  margin-bottom: 50px;
+  text-decoration: underline;
+  color: #00235B;
+}
+
+.upload-page button{
+  width:170px;
+  height: 170px;
+  border-radius: 20px;
+  border:2px solid #00235B;
+  background-color: white;
+  margin: 0px 30px 0px 30px;
+}
+
+.upload-page img{
+  width:100px;
+  height: 100px;
+  padding:10px;
+}
+
+.upload-page p{
+  color:#00235B;
+  font-weight: 5px;
+}
+
+/*--------------Upload Page End---------------*/

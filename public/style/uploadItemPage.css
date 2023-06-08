@@ -1,0 +1,52 @@
+
+/*-------------Upload Iteam Page Start----------*/
+
+.upload-iteam-page-div{
+  text-align: center;
+  background-color: #FAF7F0;
+  width:70%;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 30px;
+  border:2px solid #00235B;
+  padding-bottom: 20px;
+}
+
+.upload-iteam-page-div h2{
+  text-decoration: underline;
+}
+.upload-iteam-page-div-input, .upload-iteam-page-div-option,.upload-iteam-page-div-textarea{
+  width:30%;
+  height:30px;
+  display: inline-block;
+  margin:10px auto 10px auto;
+  border-radius: 10px;
+  border: 2px solid #00235B;
+}
+
+.upload-iteam-page-div-textarea{
+  width:90%;
+  height: 70px;
+}
+
+.upload-iteam-page-div-option{
+  height:36px;
+}
+.upload-iteam-page-div button{
+  width:30%;
+  height:50px;
+  border-radius: 30px;
+  border: 2px solid #00235B;
+  background-color: #00235B;
+  color:white;
+  font-size: 15px;
+
+}
+
+.upload-iteam-page-div button:hover{
+  background-color: #FAF7F0;
+  color:#00235B;
+  font-size: 20px;
+}
+
+/*------------Upload Item Page End-----------*/

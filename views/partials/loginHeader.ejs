@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Rentifr</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="style/header.css">
+      <link rel="stylesheet" href="style/footer.css">
+      <link rel="stylesheet" href="style/index.css" >
+      <link rel="stylesheet" href="style/loginPage.css">
+      <link rel="stylesheet" href="style/profile.css">
+      <link rel="stylesheet" href="style/itemsMenu.css">
+      <link rel="stylesheet" href="style/paymentPage.css">
+      <link rel="stylesheet" href="style/profileDetailsPage.css">
+      <link rel="stylesheet" href="style/uploadPage.css">
+      <link rel="stylesheet" href="style/uploadItemPage.css">
+      <link rel="stylesheet" href="style/uploadedItemPage.css">
+      <link rel="stylesheet" href="style/cart.css">
+
+   </head>
+
+
+   <body>
+
+      <header>
+        <a href="#"><img id="header-main-logo" src="logos/logonet.png" alt=""></a>
+
+        <select onclick="city();" id="header-btn-1" class="" name="">
+          <option id="cityVal" value="delhi">Delhi</option>
+          <option value="delhi">Delhi</option>
+          <option value="mumbai">Mumbai</option>
+          <option value="pune">Pune</option>
+          <option value="moradabad">Moradabad</option>
+        </select>
+
+      <script type="text/javascript">
+
+      function city(){
+      var cityVal=$("#header-btn-1").find(":selected").val();
+      localStorage.city=cityVal;
+      }
+      $("#cityVal").text(localStorage.city);
+      $("#cityVal").val(cityVal);
+
+      </script>
+
+
+      <input id="header-btn-2" type="text" name="" value="" placeholder="Search">
+
+        <button id="header-btn-3"> <img id="header-btn-3-icon" src="logos/cart-icon.png" alt=""> Cart</button>
+        <button id="header-btn-4">Welcome, <%=accountName%></button>
+      </header>
+
+
+      <div class="profile-side-bar" id="profile-side-bar">
+
+        <img style="margin:15px 0px 15px 0px;" id="profiledetails-view-button" src="logos/profileicon.png" alt="">
+        <img style="margin:15px 0px 15px 0px;" id="upload-page-button" src="logos/rentdenaicon.png" alt="">
+        <img style="margin:15px 0px 15px 0px;" id="renting-iteam-page-button" src="logos/rentlenaicon.png" alt="">
+        <a href="/logout"><img src="logos/logouticon.png" alt=""></a>
+
+      </div>
+
+
+      <form class="profiledetails hide" action="/profileDetailsButton" method="post">
+        <input type="number" name="mobileno" value="<%=accountMobileno%>">
+        <input type="text" name="name" value="<%=accountName%>">
+        <input type="text" name="email" value="<%=accountEmail%>">
+        <button id="profiledetails-button-submit" type="submit" name="button">Submit</button>
+      </form>
+
+
+      <form class="profiledetails hide" action="/uploadPage" method="post">
+        <input type="number" name="mobileno" value="<%=accountMobileno%>">
+        <input type="text" name="name" value="<%=accountName%>">
+        <input type="text" name="email" value="<%=accountEmail%>">
+        <button id="uploadPage-button-submit" type="submit" name="button">Submit</button>
+      </form>
+
+
+      <form class="profiledetails hide" action="/rentingIteamPageButton" method="post">
+        <input type="number" name="mobileno" value="<%=accountMobileno%>">
+        <input type="text" name="name" value="<%=accountName%>">
+        <input type="text" name="email" value="<%=accountEmail%>">
+        <button id="rentingIteamPage-button-submit" type="submit" name="button">Submit</button>
+      </form>
+
+
+      <form class="profiledetails hide" action="/loginCart" method="post">
+        <input type="number" name="mobileno" value="<%=accountMobileno%>">
+        <input type="text" name="name" value="<%=accountName%>">
+        <input type="text" name="email" value="<%=accountEmail%>">
+        <button id="loginCart-button-submit" type="submit" name="button">Submit</button>
+      </form>
+
+
+      <form class="profiledetails hide" action="/loginPaymentPage" method="post">
+        <input type="number" name="mobileno" value="<%=accountMobileno%>">
+        <input type="text" name="name" value="<%=accountName%>">
+        <input type="text" name="email" value="<%=accountEmail%>">
+        <button id="loginPaymentPage-button-submit" type="submit" name="button">Submit</button>
+      </form>
+
+
+      <form class="profiledetails hide" action="/loginPaymentConfirm" method="post">
+        <input type="number" name="mobileno" value="<%=accountMobileno%>">
+        <input type="text" name="name" value="<%=accountName%>">
+        <input type="text" name="email" value="<%=accountEmail%>">
+        <button id="loginPaymentConfirm-button-submit" type="submit" name="button">Submit</button>
+      </form>
+
+
+      <script src="script/loginHeader.js"></script>

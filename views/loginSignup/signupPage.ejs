@@ -1,0 +1,20 @@
+<%- include("../partials/header") %>
+
+
+  <div class="login-div signup-div" >
+          <h2>Sign Up</h2>
+
+<form class="" action="/signup" method="post">
+
+      <input type="text" name="accountName" placeholder="  Name" id="sampleName" required>
+      <input type="number" name="accountMobileno" placeholder="Mobile Number" required><br>
+      <input type="email" name="accountEmail" placeholder="e-Mail">
+      <input type="password" name="accountPassward" placeholder="Passward" required><br>
+      <button type="submit">Create Account</button><br>
+
+</form>
+      <a href="/login">Already have account? Login</a>
+  </div>
+
+
+<%- include("../partials/footer") %>
